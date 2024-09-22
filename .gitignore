@@ -21,3 +21,5 @@ elm-stuff/
 build/
 node_modules/
 env/
+__jac_gen__/
+.jac_mypy_cache/
