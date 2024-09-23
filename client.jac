@@ -21,15 +21,6 @@ can bootstrap_frontend (token: str) {
         with st.chat_message("user") {
             st.markdown(prompt);
         }
-    }
-    if prompt := st.chat_input("What is up?") {
-        # Add user message to chat history
-        st.session_state.messages.append({"role": "user", "content": prompt});
-
-        # Display user message in chat message container
-        with st.chat_message("user") {
-            st.markdown(prompt);
-        }
 
         # Display assistant response in chat message container
         with st.chat_message("assistant") {
